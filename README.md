@@ -25,6 +25,5 @@ npm start
 The app will be available at http://localhost:3000 in your web browser.
 
 ## Acknowledgments
-* Thanks to the [CoinRanking API](https://developers.coinranking.com/api) for providing cryptocurrency data.
-* Thanks to the [Bing News Search API](https://www.microsoft.com/en-us/bing/apis/bing-news-search-api) for providing news data.
+* Thanks to the [CoinRanking API](https://developers.coinranking.com/api) for providing cryptocurrency data and [Bing News Search API](https://www.microsoft.com/en-us/bing/apis/bing-news-search-api) for providing news data.
 
