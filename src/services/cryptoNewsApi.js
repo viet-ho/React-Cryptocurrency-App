@@ -2,10 +2,10 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 const cryptoNewsHeaders = {
     'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
-    'X-RapidAPI-Host': 'web-search-apis.p.rapidapi.com'
+    'X-RapidAPI-Host': 'news-search9.p.rapidapi.com'
 }
 
-const baseUrl = 'https://web-search-apis.p.rapidapi.com';
+const baseUrl = 'https://news-search9.p.rapidapi.com';
 
 const createRequest = (url) => ({ url, headers: cryptoNewsHeaders });
 
@@ -14,7 +14,7 @@ export const cryptoNewsApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl }),
     endpoints: (builder) => ({
         getCryptoNews: builder.query({
-            query: ({ newsCategory, count }) => createRequest(`/news?q=${newsCategory}&count=${count}&sortBy=Relevance`),
+            query: ({ newsCategory, count }) => createRequest(`/news/search?q=${newsCategory}&count=${count}&setLang=en`),
         })
     })
 });
